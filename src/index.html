@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ifaz Hassan</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <article id="contact-info">
+                <img id="picture" src="assets\My_Picture.jpg" alt="My Picture">
+                <h1 id="name">IFAZ HASSAN</h1>
+                <p id="title">Full Stack Developer</p>
+                <div id="resume-contact">
+                    <a id="resume" href="assets\Ifaz_Resume.pdf" download><i class="fas fa-download"></i> Resume</a>
+                    <a id="contact" href="#contact-me">Contact Me</a>
+                </div>
+            </article>
+            <div id="container">
+                <article id="about">
+                    <h3>About me and Academic Honesty</h3>
+                    <p>
+                        I am Ifaz, a programmer studying at Seneca. I like backend and frontend dearly
+                        and enjoy several aspects of programming. I also love watching old movies and
+                        also am enthusiastic about history and astronomy.<br><br>
+
+                        I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy.
+                        No part of this assessment has been copied manually or electronically from any other source
+                        (including web sites) except for the information supplied by the WEB222 instructors and / or
+                        made available in this assessment for my use. I also declare that no part of this assignment has
+                        been distributed to other students.<br><br>
+
+                        <strong>Date:&nbsp</strong>Aug 18, 2023
+                    </p>
+                </article>
+                <article>
+                    <h3>Basic Information</h3>
+                    <p>
+                        <strong>
+                        AGE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;
+                        </strong>
+                        19
+                    </p>
+                    <p>
+                        <strong>
+                            EMAIL:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </strong>
+                        ifazhassan23@gmail.com
+                    </p>
+                    <p>
+                        <strong>
+                            LANGUAGE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </strong>
+                        English, Bangla
+                    </p>
+                    <p><strong>CLASS SECTION:&nbsp;&nbsp;</strong>NAA</p>
+                    <p><strong>STUDENT ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>124735226</p>
+                    <p><strong>INSTRUCTOR:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>Mark Meritt</p>
+                </article>
+            </div>
+            <h3 id="education">Education</h3>
+            <div id="container-2">
+                <article id="year">
+                    <p>2023-2025(expected)</p>
+                    <h3>Advanced Diploma</h3>
+                </article>
+                <article id="professor">
+                    <p>Advanced Diploma<br><span>Seneca College</span></p>
+                    <p>Under the Supervision of Professor Mark Meritt</p>
+                </article>
+            </div>
+            <article id="contact-me">
+                <h3 id="contact_me">Contact Me</h3>
+                <form id="form" name="contact" action="https://httpbin.org/post" method="post">      
+                    <label for="full-name">Name</label>
+                    <input
+                    id="full-name"
+                    name="full-name"
+                    autocomplete="name"
+                    type="text"
+                    required
+                    /><br><br>
+              
+                    <label for="email">Email</label>
+                    <input
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    type="email"
+                    required
+                    /><br><br>
+
+                    <label for="city">City</label>
+                    <input
+                    type="text"
+                    list="cities"
+                    name="city"
+                    placeholder="Choose your city"
+                    required
+                    /><br><br>
+
+                    <datalist id="cities">
+                        <option value="Toronto"> </option>
+                        <option value="Vancouver"> </option>
+                        <option value="Ottawa"> </option>
+                        <option value="Quebec"> </option>
+                    </datalist>
+              
+                    <label for="date">Date</label>
+                    <input id="date" name="date" type="date" required/><br><br>
+
+                    <label for="postalCode">Postal Code</label>
+                    <input
+                    type="text"
+                    id="postalCode"
+                    name="postalCode"
+                    placeholder="A1A 1A1"
+                    pattern="[A-Za-z]\d[A-Za-z] ?\d[A-Za-z]\d"
+                    required><br><br>
+
+                    <p>Select an option</p>
+                    <input type="radio" id="question" name="option" value="Question" required>
+                    <label for="question">Question</label><br>
+                    <input type="radio" id="comment" name="option" value="Comment" required>
+                    <label for="comment">Comment</label><br>
+                    <input type="radio" id="hiring" name="option" value="Hiring" required>
+                    <label for="hiring">Hiring</label><br><br>
+
+                    <div id="hour" hidden>
+                        <label for="hourlyRate">Hourly Rate</label>
+                        <input
+                        type="text"
+                        id="hourlyRate"
+                        name="hourlyRate"
+                        placeholder="30.50"
+                        pattern="\d+.?\d+"
+                        required><br><br>
+                    </div>
+
+                    <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message"
+                    required
+                    ></textarea><br><br>
+              
+                    <div>
+                      <input type="submit" name="Submit" value="Submit"/>
+                      <input type="reset" name="Reset" value="Reset"/>
+                    </div>
+                  </form>
+            </article>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

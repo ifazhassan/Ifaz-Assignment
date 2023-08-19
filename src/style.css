@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@100&display=swap');
+
+body {
+  margin: auto;
+  width: 95%;
+  max-width: 1024px;
+}
+
+#contact-info {
+  margin: 5vh auto;
+  width: 50vw;
+  height: 70vh;
+  background-color: #3477eb;
+  text-align: center;
+}
+
+#picture {
+  margin-top: 10%;
+  width: 25%;
+}
+
+#name {
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+#title {
+  color: white;
+  font-size: small;
+}
+
+#resume-contact {
+  margin-top: 4%;
+}
+
+#resume {
+  margin-right: 2%;
+  padding: 2%;
+  border-radius: 50% / 100%;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+#contact {
+  padding: 2%;
+  border-radius: 50% / 100%;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+#container {
+  display: flex;
+  padding: 0 5vh;
+  border: 2px solid grey;
+  margin-bottom: 5vh;
+}
+
+#about {
+  width: 40%;
+  margin-right: 20%;
+}
+
+#education {
+  text-align: center;
+}
+
+#container-2 {
+  display: flex;
+  border: 2px solid grey;
+  margin-bottom: 5vh
+}
+
+#year {
+  background-color: #3477eb;
+  padding: 0 5vh;
+  color: white;
+}
+
+#professor {
+  padding: 0 3.5vh;
+}
+
+span {
+  color: grey;
+}
+
+#contact_me {
+  text-align: center;
+}
+
+@media (max-width: 1200px) and (orientation: portrait) {
+  body {
+    margin: 0;
+  }
+
+  #contact-info {
+    margin: 2vh 0;
+    height: 47.5vh;
+    width: 105%;
+  }
+
+  #container {
+    flex-direction: column;
+  }
+
+  #about {
+    width: 100%;
+    margin-right: 0;
+  }
+}
